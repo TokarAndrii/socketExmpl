@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" type="module"></script>
+    <style>
+      #messages-container {
+        width: 70vw;
+        height: 300px;
+        margin-bottom: 2em;
+        padding: 8px 16px;
+        display: inline-block;
+        border: 1px solid black;
+      }
+
+      fieldset {
+        width: 70vw;
+        margin-bottom: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      label {
+        margin-right: 12px;
+        width: 80px;
+      }
+
+      button {
+        width: 120px;
+        padding: 8px 16px;
+      }
+
+      #message-input,
+      #join-room-input {
+        flex-grow: 2;
+        margin-right: 12px;
+        padding: 8px 16px;
+      }
+    </style>
+    <title>Socket example app</title>
+  </head>
+  <body>
+    <main>
+      <div id="messages-container"></div>
+      <form id="chat-form">
+        <fieldset>
+          <label for="message-input">Message</label>
+          <input type="text" id="message-input" />
+          <button type="submit" id="send-message-btn">Send</button>
+        </fieldset>
+        <fieldset>
+          <label for="join-room-input">Room</label>
+          <input type="text" id="join-room-input" />
+          <button type="button" id="join-room-btn">Join room</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
